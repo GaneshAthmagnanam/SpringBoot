@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-navbar color="farmGreen">
+    <ion-title >
+      Spring Boot Registration
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+ 
+  <ion-item>
+   <ion-label floating>Accenture Email Address*</ion-label>
+   <ion-input type="email" [(ngModel)]="email"></ion-input>
+  </ion-item>
+  
+  <button id="loginNow" ion-button icon-left block type="submit" (click)="submit()">
+    <ion-icon name="log-in"></ion-icon>
+      Book a seat
+  </button>
+  <div id="errorMsg">{{errorMsg}}</div><br/>
+  <ion-list>
+    <h3> Topics Covered</h3>
+      <ion-item style="text-align: center">
+        
+        <h2>Spring MVC</h2>
+        <h2>Spring Boot</h2>
+        
+      </ion-item>
+     <h3>Prerequites</h3>
+      <ion-item style="text-align: center">
+        <h2>Java</h2>
+        <h2>and</h2>
+        <h2>Interest in learning new stuffs</h2>
+      </ion-item >
+      <h3> Advantages</h3>
+        <ion-item style="text-align: center">
+          <h2>Learner can implement this technology in their existing project</h2>
+          <h2>or</h2>
+          <h2>Learner can also search for new job</h2>
+      </ion-item>
+      <div style="text-align: center;color: red;">
+        <h3>Session Details: 13-Dec-2017 15:30-16:30</h3>
+      </div>
+  </ion-list>
+</ion-content>
